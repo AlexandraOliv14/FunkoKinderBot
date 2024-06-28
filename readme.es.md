@@ -1,6 +1,6 @@
 ## Funko Kinder Bot
-[![en](https://img.shields.io/badge/lang-en-yellow.svg)](./readme.md)
-[![es](https://img.shields.io/badge/lang-es-gre.svg)](./readme.es.md)
+[![en](https://img.shields.io/badge/lang-en-yellow.svg)](https://github.com/AlexandraOliv14/FunkoKinderBot/blob/main/README.md)
+[![es](https://img.shields.io/badge/lang-es-gre.svg)](https://github.com/AlexandraOliv14/FunkoKinderBot/blob/main/readme.es.md)
 
 ### Table of Contents
 
