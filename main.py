@@ -105,12 +105,14 @@ def handle_text_message(message):
 
     if(len(codes)==2):
         list= nameByCodes(codes[0], codes[1])
-        response = ""
-        for item in list:
-            response += f"funko {item[0]}  \n"
-            
-        bot.reply_to(message, response)
-
+        if(len(list)==0):
+            bot.reply_to(message, "El codigo no se encuentra en la base de datos")
+        else:
+            response = ""
+            for item in list:
+                response += f"funko {item[0]}  \n"
+                
+            bot.reply_to(message, response)
     else:
         bot.reply_to(message,"codigos no validos")
 
