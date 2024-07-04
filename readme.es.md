@@ -109,6 +109,7 @@ Estas tablas almacenan la información sobre las versiones de los Funkos y los d
 ### Uso
 
 - `/start` o `/inicio`: Muestra un mensaje de bienvenida y los Comandos disponibles.
+- `/search` o `/busqueda`: Realiza una busqueda completa.
 - `/funkos`: Muestra una lista de Funkos disponibles junto con sus versiones como botones interactivos.
 - `/versions` o `/versiones`: Muestra una lista de versiones disponibles.
 - `/frontcode` o `/codigofrontal`: Muestra una lista de códigos frontales disponibles como botones interactivos.

@@ -108,6 +108,7 @@ These tables store information about Funko versions and the details of each Funk
 ### Usage
 
 - `/start` o `/inicio`: Displays a welcome message and the available commands.
+- `/search` o `/busqueda`: Perform a complete search.
 - `/funkos`: Shows a list of available Funkos along with their versions as interactive buttons.
 - `/versions` o `/versiones`: Shows a list of available versions.
 - `/frontcode` o `/codigofrontal`: Shows a list of available front codes as interactive buttons.
