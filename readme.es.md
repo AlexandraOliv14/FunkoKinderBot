@@ -70,28 +70,38 @@ ID = ""
 
 ### Configuración de la Base de Datos
 
-Para configurar la base de datos, asegúrate de tener una base de datos MariaDB instalada y ejecutándose. Luego, crea las tablas necesarias ejecutando las siguientes consultas SQL:
+Para configurar la base de datos, asegúrate de tener una base de datos MariaDB instalada y ejecutándose. Luego, crea las tablas necesarias:
 
-```sql
-CREATE TABLE versiones (
-    version_id INT AUTO_INCREMENT,
-    version INT NOT NULL,
-    descripcion VARCHAR(255) NOT NULL,
-    PRIMARY KEY(version_id)
-);
+## `versions`
+| Field       | Type         | Null | Key | Default | Extra          |
+| ---         | ---          |---   |---  |---      |---             |
+| id_version  | int(11)      | NO   | PRI | NULL    | auto_increment |
+| version     | int(11)      | NO   |     | NULL    |                |
+| description | varchar(255) | NO   |     | NULL    |                |
 
-CREATE TABLE kinder (
-    kinder_id INT AUTO_INCREMENT,
-    nombre_funko VARCHAR(255) NOT NULL,
-    codigo_frontal VARCHAR(255) NOT NULL,
-    codigo_trasero VARCHAR(255) NOT NULL,
-    obtenido TINYINT(1),
-    version_id INT, 
-    PRIMARY KEY(kinder_id),
-    CONSTRAINT fk_type FOREIGN KEY(version_id) REFERENCES versiones(version_id)
-);
+## `cod_back`
+| Field            | Type         | Null | Key | Default | Extra          |
+| ---              | ---          |---   |---  |---      |---             |
+| id_cod_back      | int(11)      | NO   | PRI | NULL    | auto_increment |
+| code_back_number | int(11)      | NO   |     | NULL    |                |
+| code_back_code   | varchar(255) | NO   |     | NULL    |                |
 
-```
+## `cod_front`
+| Field        | Type         | Null | Key | Default | Extra          |
+| ---          | ---          |---   |---  |---      |---             |
+| id_cod_front | int(11)      | NO   | PRI | NULL    | auto_increment |
+| code_front   | varchar(255) | NO   |     | NULL    |                |
+
+## `funko`
+| Field        | Type         | Null | Key | Default | Extra          |
+| ---          | ---          |---   |---  |---      |---             |
+| id_funko     | int(11)      | NO   | PRI | NULL    | auto_increment |
+| name         | varchar(255) | NO   |     | NULL    |                |
+| collected    | tinyint(1)   | YES  |     | NULL    |                |
+| id_version   | int(11)      | YES  | MUL | NULL    |                |
+| id_cod_front | int(11)      | YES  | MUL | NULL    |                |
+| id_cod_back  | int(11)      | YES  | MUL | NULL    |                |
+
 
 Estas tablas almacenan la información sobre las versiones de los Funkos y los detalles de cada Funko, respectivamente.
 
