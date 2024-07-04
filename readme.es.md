@@ -72,27 +72,27 @@ ID = ""
 
 Para configurar la base de datos, asegúrate de tener una base de datos MariaDB instalada y ejecutándose. Luego, crea las tablas necesarias:
 
-## `versions`
+### `versions`
 | Field       | Type         | Null | Key | Default | Extra          |
 | ---         | ---          |---   |---  |---      |---             |
 | id_version  | int(11)      | NO   | PRI | NULL    | auto_increment |
 | version     | int(11)      | NO   |     | NULL    |                |
 | description | varchar(255) | NO   |     | NULL    |                |
 
-## `cod_back`
+### `cod_back`
 | Field            | Type         | Null | Key | Default | Extra          |
 | ---              | ---          |---   |---  |---      |---             |
 | id_cod_back      | int(11)      | NO   | PRI | NULL    | auto_increment |
 | code_back_number | int(11)      | NO   |     | NULL    |                |
 | code_back_code   | varchar(255) | NO   |     | NULL    |                |
 
-## `cod_front`
+### `cod_front`
 | Field        | Type         | Null | Key | Default | Extra          |
 | ---          | ---          |---   |---  |---      |---             |
 | id_cod_front | int(11)      | NO   | PRI | NULL    | auto_increment |
 | code_front   | varchar(255) | NO   |     | NULL    |                |
 
-## `funko`
+### `funko`
 | Field        | Type         | Null | Key | Default | Extra          |
 | ---          | ---          |---   |---  |---      |---             |
 | id_funko     | int(11)      | NO   | PRI | NULL    | auto_increment |
